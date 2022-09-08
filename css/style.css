@@ -203,6 +203,6 @@ a:not(#terms-link) {
 }
 
 .payment__paragraph {
-  text-align: center;
-  margin-top: 2rem;
+  margin-left: 10%;
+  margin-top: 5rem;
 }
