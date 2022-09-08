@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <main>
+      <form action="/pay.html" method="get" class="registration__form">
+        <fieldset class="fieldset__registration">
+          <h1>Sign up</h1>
+          <label for="fname">First name</label>
+          <input type="text" name="fname" id="fname" placeholder="John" autocomplete="given-name"/>
+          <label for="lname">Last name</label>
+          <input type="text" name="lname" id="lname" placeholder="Smith" autocomplete="given-name"/>
+          <label for="email">Email</label>
+          <input type="email" name="email"id="email" placeholder="example@email.com" autocomplete="email" />
+
+          <label for="password">Password</label>
+          <input type="password" placeholder="********" />
+
+          <label for="confirm-password">Confirm password</label>
+          <input type="password" placeholder="********" />
+        </fieldset>
+
+        <fieldset class="fieldset__registration">
+          <div class="age">
+            <label id="age" for="age">Date of birth</label>
+            <br />
+            <input
+              type="number"
+              min="1"
+              max="31"
+              name="day"
+              id="day"
+              placeholder="DD"
+              autocomplete="bday-day"
+            />
+            <input
+              type="number"
+              name="month"
+              min="1"
+              max="12"
+              id="month"
+              placeholder="MM"
+              autocomplete="bday-month"
+            />
+            <input
+              type="text"
+              name="year"
+              minlength="4"
+              maxlength="4"
+              id="year"
+              placeholder="YYYY"
+              autocomplete="bday-year"
+            />
+          </div>
+
+          <div class="gender">
+            <label for="gender">Gender</label>
+            <br />
+            <select name="gender" id="gender">
+              <option value="" disabled selected>-</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="not-specified">Not specified</option>
+            </select>
+          </div>
+          <div class="terms">
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <small>I agree to the <a id="terms-link" href="#">terms</a></small>
+          </div>
+        </fieldset>
+
+        <input type="submit" value="Sign up"></input>
+      </form>
+    </main>
+  </body>
+</html>

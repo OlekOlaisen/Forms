@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Payment</title>
+  </head>
+  <body>
+    <main>
+      <form action="/thankyou.html" method="get" class="payment__form">
+        <h1 class="payment__headline">Confirm payment</h1>
+        <label for="card-option" id="cards__radio" class="payment__paragraph">
+          Please select a payment method and proceed with your payment
+        </label>
+
+        <div class="payment__cards">
+          <div class="payment__cards--cards">
+            <input type="radio" name="card-option" id="cards__radio" />
+            <img
+              class="cards__img"
+              src="/assets/img/visa-large.png"
+              alt="visa"
+            />
+            <img
+              class="cards__img"
+              src="/assets/img/mastercard-large.png"
+              alt="mastercard"
+            />
+            <img
+              class="cards__img"
+              src="/assets/img/maestro-large.png"
+              alt="maestro"
+            />
+          </div>
+
+          <div class="payment__cards--options">
+            <input type="radio" name="card-option" id="cards__radio" />
+            <img
+              class="cards__img"
+              src="/assets/img/paypal-large.png"
+              alt="paypal"
+            />
+            <img
+              class="cards__img"
+              src="/assets/img/americanexpress-large.png"
+              alt="americanexpress"
+            />
+          </div>
+        </div>
+        <fieldset class="payment__fieldset">
+          <label for="card-name">Cardholder name</label>
+          <input
+            type="text"
+            name="card-name"
+            id="card-name"
+            class="payment__input"
+            autocomplete="cc-name"
+          />
+          <label for="card-number">Card number</label>
+          <input
+            type="text"
+            name="card-number"
+            id="card-number"
+            class="payment__input"
+            maxlength="11"
+            autocomplete="cc-number"
+          />
+        </fieldset>
+
+        <fieldset class="payment__fieldset">
+          <div class="age">
+            <label id="end-date" for="end-date">End date</label>
+            <label id="CVV-text" for="cvv">CVV -</label>
+            <small>3 digits</small>
+            <br />
+
+            <input
+              type="number"
+              name="month"
+              min="1"
+              max="12"
+              id="month"
+              placeholder="MM"
+              class="payment__input"
+              autocomplete="cc-exp-month"
+            />
+            <input
+              type="number"
+              name="year"
+              min="17"
+              max="35"
+              id="year"
+              placeholder="YY"
+              class="payment__input"
+              autocomplete="cc-exp-year"
+            />
+            <input
+              type="tel"
+              name="cvv"
+              minlength="3"
+              maxlength="3"
+              id="cvv"
+              class="payment__input"
+            />
+            <br />
+            <br />
+          </div>
+        </fieldset>
+
+        <input type="submit" value="Continue" />
+      </form>
+    </main>
+  </body>
+</html>
