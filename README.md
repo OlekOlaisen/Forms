@@ -1,6 +1,6 @@
 
 
-<h1 align="center">Vue Calculator</h1>
+<h1 align="center">Subscription form</h1>
 
 
 
