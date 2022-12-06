@@ -100,17 +100,17 @@ input[type="submit"],
   transition: 300ms;
 }
 
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+}
+
 .link-homepage {
   text-align: center;
   transform: 300ms;
 }
 
 .link-homepage:hover {
-  cursor: pointer;
-  background-color: var(--secondary-color);
-}
-
-input[type="submit"]:hover {
   cursor: pointer;
   background-color: var(--secondary-color);
 }
